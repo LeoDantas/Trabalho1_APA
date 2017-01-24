@@ -1,4 +1,4 @@
-package ordenação;
+package APA;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -23,7 +23,7 @@ public class Parsing {
        public void run(){
          
             try{
-                input = new BufferedReader(new FileReader("C:/Users/Dell/Documents/UFPB/P4/Ord/students.csv"));
+                input = new BufferedReader(new FileReader("C:/Users/Dell/Documents/UFPB/APA/students.csv"));
                 while(cont<quantAluno && input.ready()){
                     String tmp = input.readLine();
                     ar = tmp.split(",");

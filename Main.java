@@ -1,7 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-
+/**
+ *
+ * @author Leonardo Dantas
+ */
 
 
 public class Main{

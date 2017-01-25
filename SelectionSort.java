@@ -1,6 +1,4 @@
-package APA;
-
-import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  *
@@ -9,23 +7,25 @@ import java.util.ArrayList;
  */
 public class SelectionSort {
     
-  public void SSort(ArrayList<Alunos> aluno){
+  public static void SSort(Comparable [ ] a){
       int i,j,min,cont=0;
       
       long tempoInicial = System.currentTimeMillis();   
-      for(i = 0; i<aluno.size()-1 ;i++){
+      for(i = 0; i<a.length-1 ;i++){
           min=i;
-          for(j=i+1;j<aluno.size();j++){
-              if( aluno.get(j).getMatricula() <  aluno.get(min).getMatricula()){
+          for(j=i+1;j < a.length;j++){
+              if(a[j].compareTo(a[min]) <= 0){
                   min=j;
               }             
           }
-        Alunos aux = aluno.get(min); 
-        aluno.set(min, aluno.get(i));
-        aluno.set(i, aux);
+        Comparable aux = a[min]; 
+        a[min] =  a[i];
+        a[i] = aux;
         cont++;
       }
       long tempoFinal = System.currentTimeMillis();  
       System.out.println("Trocas "+cont+" Tempo:"+(tempoFinal - tempoInicial) / 1000d);
+   
   }
-}
+
+  }

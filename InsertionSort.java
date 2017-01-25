@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author Dell
+ * @author Leonardo Dantas
  */
 public class InsertionSort {
     

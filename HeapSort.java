@@ -1,3 +1,8 @@
+/**
+ *
+ * @author Leonardo Dantas
+ */
+
 public class HeapSort {
 
     private static int total;

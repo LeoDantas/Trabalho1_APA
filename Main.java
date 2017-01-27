@@ -27,34 +27,44 @@ public static void main(String[] args) {
 
 
 	switch(x){
-	   case 1:
-		InsertionSort i = new InsertionSort();
+ 	case 1:
+	InsertionSort i = new InsertionSort();
         i.insercao(a);
-        System.out.println(Arrays.toString(a));
+	for(int k=0; k<n;k++){		
+        System.out.println(a[k]);
+	}	
         break;
 
        case 2:
         SelectionSort s = new SelectionSort();
         s.SSort(a);
-        System.out.println(Arrays.toString(a));
+        for(int k=0; k<n;k++){		
+        System.out.println(a[k]);
+	}
         break;
 
        case 3:
        	QuickSort q = new QuickSort();
        	q.quick_sort(a,0,(a.length-1));
-       	System.out.println(Arrays.toString(a));
+       	for(int k=0; k<n;k++){		
+        System.out.println(a[k]);
+	}
        	break;
 
        	case 4:
        	MergeSort m = new MergeSort();
        	m.mergeSort(a);
-       	System.out.println(Arrays.toString(a));
+       	for(int k=0; k<n;k++){		
+        System.out.println(a[k]);
+	}
        	break;
 
        	case 5:
        	HeapSort h = new HeapSort();
        	h.sort(a);
-       	System.out.println(Arrays.toString(a));
+        for(int k=0; k<n;k++){		
+        System.out.println(a[k]);
+	}
        	break;
 
        	

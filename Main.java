@@ -15,9 +15,10 @@ public static void main(String[] args) {
    	
    	
    	    Scanner input = new Scanner(System.in);
-		Integer a[] = new Integer[100];
+		
 		
 		int n = input.nextInt();
+		Integer a[] = new Integer[n];
 		
 		for(int i = 0; i < n; i++){
 			a[i] = input.nextInt();

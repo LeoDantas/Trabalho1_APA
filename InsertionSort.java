@@ -20,9 +20,7 @@ public class InsertionSort {
            a[i+1]=aux;
            
         }
-        long tempoFinal = System.currentTimeMillis();  
-        System.out.println("Trocas "+cont+" Tempo:"+(tempoFinal - tempoInicial) / 1000d);
-    
+            
     }
 
   

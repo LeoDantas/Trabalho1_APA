@@ -23,8 +23,7 @@ public class SelectionSort {
         a[i] = aux;
         cont++;
       }
-      long tempoFinal = System.currentTimeMillis();  
-      System.out.println("Trocas "+cont+" Tempo:"+(tempoFinal - tempoInicial) / 1000d);
+
    
   }
 
